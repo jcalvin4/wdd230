@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Tapestry&display=swap');
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+    max-width: 72em;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+header h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    
+}
+h2{
+    font-family: 'Tapestry', cursive;
+    
+
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+p {
+    font-family: 'Libre Bodoni', serif;
+}
+
+picture {
+    margin: 0 auto;
+    padding: 1em;
+}
