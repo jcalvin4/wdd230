@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 45em) {
     .navigation{
         display: flex;
     }
@@ -12,5 +12,11 @@
     .navigation li:first-child {
         display: none;
     }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    
+    }
+    
 
 }
