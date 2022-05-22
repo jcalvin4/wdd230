@@ -1,17 +1,31 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f7ebd7;
+    max-width: 100%;
+    justify-content: center;
+
 }
 header {
     padding: 5px 0;
     max-width: 900px;
     display:flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    position: relative;
 }
 .headings{
     display:flex;
+    position: absolute;
+    left: 0px;
 
 }
 .logo{
@@ -19,6 +33,7 @@ header {
     width: 100px;
     height:auto;
     margin-top: 2em;
+    border-radius: 8px;
     
 }
 nav{
@@ -70,10 +85,8 @@ nav{
   font-size: 10px; 
   margin: 0 auto;
 } 
-body{
-    background-color: #f7ebd7;
-}
 section {
+    border-radius: 10px;
     border: 2px solid black;
     padding: 2.5em;
 }
@@ -81,21 +94,57 @@ section {
 main{
     display:grid;
     grid-template-columns: 1fr;
-    max-width: 1080px; 
-    margin: 0 auto;
     padding: 5px 0;
 }
-.containers{
-    height: 100px;
-    padding: 30px;   
+section{
+    margin: 5px;
+}
+.large{
+    grid-row: 1/2;
+
 }
 .soc{
-    list-style: none;
-    display: flex;
-    flex-direction: column-reverse;
+    text-align: end;
+    margin: 0 auto;
     padding-top: 2em;
     padding-right: 3em;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
 }
 div{
     padding: 5px;
 }
+footer{
+    border: 2px solid black;
+    justify-content: space-between;
+}
+.spotlight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner{
+    width:1100px;
+    display:inline-block;
+    text-align: left;
+}
+.otherHead{
+    position: absolute;
+    right: -30px;
+}
+.dt{
+    text-align: center;
+}
+.lm{
+    border: 1px solid black;
+}
+.footlogo{
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+.contact{
+    display: inline-block;
+
+}
+

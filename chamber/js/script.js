@@ -5,3 +5,8 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 document.querySelector('.ham').innerHTML = "&#9776"
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+document.querySelector('#date').innerHTML = fulldate;

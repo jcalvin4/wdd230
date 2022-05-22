@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 1106px) {
     .navigation{
         display: flex;
     }
@@ -13,10 +13,33 @@
         display: none;
     }
     main{
-        display: grid;
         grid-template-columns: 1fr 3fr 1fr;
     
     }
-    
+    .large{
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .belowlarge{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .join {
+        grid-column: 1/2;
+    }
+    .spotlight{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 3/4;
+        grid-row: 2/5;
+    }
+    #date{
+        justify-content: center;
+        
 
+    }
+    .dt{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
 }
