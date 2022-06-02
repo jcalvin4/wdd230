@@ -15,21 +15,18 @@ body{
 }
 header {
     padding: 5px 0;
-    max-width: 900px;
+    width: 100%;
     display:flex;
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
-    position: relative;
+    background-image: url('../images/banner.jpg');
 }
 .headings{
     display:flex;
-    position: absolute;
-    left: 0px;
 
 }
 .logo{
-    margin: 1em;
+    margin: auto;
     width: 100%;
     height:auto;
     margin-top: 2em;
@@ -38,7 +35,7 @@ header {
 }
 nav{
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 100%;
 }
 .navigation {
     list-style: none;
@@ -101,6 +98,10 @@ section{
 }
 .large{
     grid-row: 1/2;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
 
 }
 .soc{
@@ -108,9 +109,6 @@ section{
     margin: 0 auto;
     padding-top: 2em;
     padding-right: 3em;
-    position: absolute;
-    bottom: 0px;
-    right: 50px;
 }
 div{
     padding: 5px;
@@ -124,12 +122,11 @@ footer{
     grid-template-columns: 1fr 1fr;
 }
 .banner{
-    width:1100px;
+    max-width:100%;
     display:inline-block;
     text-align: left;
 }
 .otherHead{
-    position: absolute;
     right: -30px;
 }
 .dt{
@@ -146,5 +143,23 @@ footer{
 .contact{
     display: inline-block;
 
+}
+.spot3{
+    display: none;
+}
+.H-text{
+    position: absolute;
+    color:rgb(255, 255, 255);
+}
+#hero2{
+    right: 300px;
+}
+#hero3{
+    right: 320px;
+    top: 75px;
+}
+#city{
+    max-width: auto;
+    height: auto;
 }
 

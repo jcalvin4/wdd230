@@ -42,4 +42,7 @@
         grid-column: 1/4;
         grid-row: 1/2;
     }
+    .spot3{
+        display: block;
+    }
 }
