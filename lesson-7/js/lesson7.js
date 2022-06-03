@@ -1,4 +1,15 @@
-const images = document.querySelectorAll('[data-src]')
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+const loadImages = (img) => {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = () => {
+    img.removeAttribute('data-src');
+  };
+};
+
+imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+const images = document.querySelectorAll('img[data-src]')
 
 function preloadImage(img) {
     const src = img.getAttribute('data-src')
@@ -11,8 +22,8 @@ function preloadImage(img) {
 
 
 const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px -100px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px 100px 0px"
 
 };
 
