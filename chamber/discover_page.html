@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+
+        <div class="headings">
+            <picture><a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
+            </picture>
+            <section class="heading">
+                <h1>Centeral Commerce Visions</h1>
+            </section>
+            <div class="soc">
+                <a href="https://www.facebook.com/"><img src="images/flogo.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/"><img src="images/tlogo.png" alt="Twitter Logo"></a>
+            </div>
+        </div>
+
+
+        <div class="otherHead">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" class="ham">Menu</a></li>
+                    <li><a href="discover_page.html">Discover</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+
+
+
+            </nav>
+
+        </div>
+        <div>
+            <!-- <picture class="bannerC"><img src="images/banner.jpg" alt="Mountain picture" class="banner"></picture> -->
+        </div>
+    </header>
+        <main>
+            <article class="gallery">
+                <article class="gallery-item">
+                    <picture><img src="images/columbia.png" loading="lazy"alt=""></picture>
+                    <div class="gallery-label">
+                        <h3>Hiking Trail View</h3>
+                        <p>We like to believe ours is a city at one with nature. Central City is surrounded by nature. In this picture we see a view from one of our many hiking trails a ways out of the city.</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <picture><img src="images/beach(1).png" loading="lazy"alt=""></picture>
+                    <div class="gallery-label">
+                        <h3>Beaches!!</h3>
+                        <p>On the otherside of the city we offer beautiful beaches that are safe for the family with many local stores and restaurants making it fun for the whole family.</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <picture><img src="images/Flash-Day.png" loading="lazy"alt=""></picture>
+                    <div class="gallery-label"><h3>Our Favorite Holiday!</h3>
+                    <p>We advertise that Central City is the home of heroes. So, in gratitude we have dedicated a day to our first hero. The Flash!</p></div>
+                </article>
+                <article class="gallery-item">
+                    <picture><img src="images/flash-season-6.png" loading="lazy"alt=""></picture>
+                    <div class="gallery-label"><h3>Our Star Citizen</h3>
+                    <p>Thanks to our local hero. Central City is now one of the safest places in the country!</p></div>
+                </article>
+                <article class="gallery-item">
+                    <picture><img src="images/park4.png"  loading="lazy"alt=""></picture>
+                    <div class="gallery-label"><h3>Place for Family</h3>
+                    <p>Central City is full of beatiful parks easy for the family to get to. A place to unwind and enjoy extra oxygen.</p></div>
+                </article>
+                <article class="gallery-item">
+                    <picture><img src="images/capitol.jpg"  loading="lazy"alt=""></picture>
+                    <div class="gallery-label"><h3>Our Beautiful Commerce Building</h3>
+                    <p>We take business and family in the city very seriously. So we have created a building that embodies the magnitude of that goal.</p></div>
+                </article>
+            </article>
+            <section>
+                <p>last visit: <span id="last-visit-date"></span></p>
+                <p><span id="days-ago"></span> days ago</p>
+                <p><span id="seconds-ago"></span> seconds ago</p>
+            </section>
+        </main>
+        <script>
+            let lastVisitDate;
+        const now = Date.now();
+        if (window.localStorage.getItem('last-visit-date')){
+            lastVisitDate = window.localStorage.getItem('last-visit-date')
+        }
+        window.localStorage.setItem('last-visit-date', now);
+
+        const seconds = Math.floor((now - lastVisitDate) / 1000);
+        const days = Math.floor(seconds / 86400)
+
+        console.log(seconds);
+        document.querySelector('#seconds-ago').textContent = seconds;
+        document.querySelector('#days-ago').textContent = days;
+        </script>
 </body>
 </html>

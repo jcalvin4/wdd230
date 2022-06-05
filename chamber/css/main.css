@@ -162,4 +162,39 @@ footer{
     max-width: auto;
     height: auto;
 }
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+.gallery-item{
+    border: 1px solid black;
+    margin: 1em;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+
+}
+.gallery-label{
+    padding: 1em;
+}
+.gallery-item:hover{
+    box-shadow: 0 0 50px #555;
+}
+@media screen and (min-width: 56rem){
+.gallery{
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr;
+}}
+@media screen and (min-width: 90rem){
+    .gallery{
+        grid-column: 2/3;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+    }
+}
 
