@@ -140,6 +140,11 @@ footer{
     text-align: center;
     padding: 1em;
 }
+.last-visit{
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
 .contact{
     display: inline-block;
 

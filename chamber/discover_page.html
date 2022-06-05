@@ -84,12 +84,26 @@
                     <p>We take business and family in the city very seriously. So we have created a building that embodies the magnitude of that goal.</p></div>
                 </article>
             </article>
-            <section>
+            
+        </main>
+        <footer><section class="last-visit">
                 <p>last visit: <span id="last-visit-date"></span></p>
                 <p><span id="days-ago"></span> days ago</p>
                 <p><span id="seconds-ago"></span> seconds ago</p>
             </section>
-        </main>
+            <section class="footlogo">
+                <picture><img src="images/logo.png" alt="CCV Logo">
+                </picture>
+                <h3 class="">Centeral Commerce Visions</h3>
+            </section>
+            <section class="contact">Contact Us: <br>
+                Email: CCV@business.org <br>
+                Phone: (360)-975-2695</section>
+            <p class="lm">&copy; 2022 Central Commerce Vision | <b>Joseph Calvin</b> | WDD 230 Project | <script>
+                    var date = document.lastModified;
+                    document.write("Last Modified: " + date);
+                </script>
+            </p></footer>
         <script>
             let lastVisitDate;
         const now = Date.now();
@@ -105,5 +119,6 @@
         document.querySelector('#seconds-ago').textContent = seconds;
         document.querySelector('#days-ago').textContent = days;
         </script>
+        <script src="js/script.js"></script>
 </body>
 </html>
