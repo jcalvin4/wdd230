@@ -109,6 +109,8 @@
         const now = Date.now();
         if (window.localStorage.getItem('last-visit-date')){
             lastVisitDate = window.localStorage.getItem('last-visit-date')
+        } else { 
+            lastVisitDate = 0;
         }
         window.localStorage.setItem('last-visit-date', now);
 
