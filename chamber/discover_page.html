@@ -14,8 +14,7 @@
     <header>
 
         <div class="headings">
-            <picture><a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
-            </picture>
+            <a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
             <section class="heading">
                 <h1>Centeral Commerce Visions</h1>
             </section>
@@ -87,7 +86,7 @@
             
         </main>
         <footer><section class="last-visit">
-                <p>last visit: <span id="last-visit-date"></span></p>
+                <h4>last visit: <span id="last-visit-date"></span></h4>
                 <p><span id="days-ago"></span> days ago</p>
                 <p><span id="seconds-ago"></span> seconds ago</p>
             </section>
@@ -96,7 +95,7 @@
                 </picture>
                 <h3 class="">Centeral Commerce Visions</h3>
             </section>
-            <section class="contact">Contact Us: <br>
+            <section class="contact"><h2>Contact Us:</h2> <br>
                 Email: CCV@business.org <br>
                 Phone: (360)-975-2695</section>
             <p class="lm">&copy; 2022 Central Commerce Vision | <b>Joseph Calvin</b> | WDD 230 Project | <script>
@@ -104,23 +103,6 @@
                     document.write("Last Modified: " + date);
                 </script>
             </p></footer>
-        <script>
-            let lastVisitDate;
-        const now = Date.now();
-        if (window.localStorage.getItem('last-visit-date')){
-            lastVisitDate = window.localStorage.getItem('last-visit-date')
-        } else { 
-            lastVisitDate = 0;
-        }
-        window.localStorage.setItem('last-visit-date', now);
-
-        const seconds = Math.floor((now - lastVisitDate) / 1000);
-        const days = Math.floor(seconds / 86400)
-
-        console.log(seconds);
-        document.querySelector('#seconds-ago').textContent = seconds;
-        document.querySelector('#days-ago').textContent = days;
-        </script>
-        <script src="js/script.js"></script>
+        <script src="js/lastVisit.js"></script>
 </body>
 </html>
