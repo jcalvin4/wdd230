@@ -205,3 +205,37 @@ footer{
     }
 }
 
+/* Join Page */
+
+form{
+    grid-column: 2/3;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 1em;
+}
+form label,
+form input{
+    display: block;
+    width: 100%;
+}
+form input{
+    margin-bottom: 1em;
+    padding: .75rem;
+}
+label input{
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+form label.required::after{
+    content: " *required";
+    color: red;
+}
+
+input:invalid {
+    box-shadow: 0 0 2px 1px red;
+}
+#mship{
+    padding-bottom: 1em;
+}
