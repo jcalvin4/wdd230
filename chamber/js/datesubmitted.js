@@ -1,1 +1,1 @@
-document.querySelector('#subdate').value = Date();
+document.querySelector('#subdate').value = Date.now();
