@@ -7,6 +7,7 @@ fetch('https://jcalvin4.github.io/wdd230/chamber/json/directory.json')
     businesses = businesses.directory;
     businesses.forEach( business => {
     const section = document.createElement('section');
+    section.setAttribute('class', 'card')
     
     const bname = document.createElement('h1');
     bname.textContent = `${business["business"]}`;
@@ -26,6 +27,7 @@ fetch('https://jcalvin4.github.io/wdd230/chamber/json/directory.json')
     const image = document.createElement('img');
     image.setAttribute('src', `${business["image"]}`);
     image.setAttribute('alt', `${business["business"]}`);
+    image.setAttribute('class', 'logos')
     
     section.appendChild(bname);
     section.appendChild(location);

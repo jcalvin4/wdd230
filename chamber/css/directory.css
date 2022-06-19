@@ -1,10 +1,13 @@
+/*Directory Page*/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-main {
+.directory {
+    display: flex;
 	margin: 0 auto;
 	border: 1px solid #bbb;
 	padding: 0.5rem;
@@ -17,9 +20,6 @@ main {
 	display: none;
     
 }
-
-
-
 
 .menu button {
 	padding: 1rem;
@@ -85,6 +85,26 @@ img {
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
 
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f7ebd7;
+    max-width: 100%;
+    justify-content: center;
+
+}
+header {
+    padding: 5px 0;
+    width: 100%;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 @media (min-width: 700px) {
 	.list section img {
 		display: block;
@@ -94,10 +114,6 @@ img {
         text-align: center;
     }
 
-	#directory{
-		max-width: 700px;
-	}
-
     .menu {
         display: block;
         margin: 1rem auto;
@@ -105,6 +121,5 @@ img {
         padding: 0.5rem;
         background-color: #bbb;
         text-align: center;
-        
     }
 }
