@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="Discover Page" content="Images with general descriptions.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +14,15 @@
     <link rel="stylesheet" href="css/large.css">
 
     <title>Chamber Home</title>
+    <meta name="description" content="Main Page.">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 
 <body>
     <header>
 
         <div class="headings">
-            <picture><a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
-            </picture>
+            <a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
             <section class="heading">
                 <h1>Centeral Commerce Visions</h1>
             </section>
@@ -38,8 +38,7 @@
                 <ul class="navigation">
                     <li><a href="#" class="ham"></a></li>
                     <li><a href="discover_page.html">Discover</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
                 </ul>
@@ -50,49 +49,46 @@
             </nav>
 
         </div>
-        <div>
-            <!-- <picture class="bannerC"><img src="images/banner.jpg" alt="Mountain picture" class="banner"></picture> -->
-        </div>
     </header>
 
     <main>
         <section class="dt">
-            <h2 class="date"></h2>
+            <h2 class="date">Full Date: <br></h2>
 
         </section>
         <section class="small1">
-            <p></p>
+            <h2>Networking Event</h2>
+            <p>Join us for a Networking convention in our commerce building!<br>
+            We pride ourselves in connecting our community and businesses together.<br>
+        This monthly event is proof of our efforts and the efforts of our city to be involved and unified.</p>
         </section>
 
         <section class="large">
-            <h2 class="H-text" id="hero2">Welcome To Central City!</h2>
-            <h3 class="H-text" id="hero3">Home of Heroes!</h3>
-            <picture><img src="images/centrlacity.png" alt="Central City" id="City"></picture>
-            <p></p>
+            <h2 class="H-text" id="hero2">Welcome To Central City!<br> </h2>
+            <picture id="hero">
+            
+            <img src="images/centrlacity.jpg" alt="Central City" id="City"></picture>
+            <a class="join" href="join.html"><strong>Join Us</strong></a>
         </section>
 
         <section class="spotlight">
-            <div class="spot1">
-                <h2>Spotlight 1</h2>
-            </div>
-            <div class="spot2">
-                <h2>Spotlight 2</h2>
-            </div>
-            <div class="spot3">
-                <h2>Spotlight 3</h2>
-            </div>
+            <h2>Our Stars!</h2>
+            
         </section>
 
         <section class="weather">
-            <p>weather</p>
+            <h2 id="temp">Weather Today</h2>
         </section>
 
         <section class="belowlarge">
-            <p>below</p>
+            <h3>Animal Shelter Expansion</h3>
+            <p>Thanks to the efforts of our community volunteers and the wonderful employees. <br> We are proud to announce the expansion of our animal shelter, making it larger to provide the animal residents with better living conditions until they're adopted.
+            </p>
         </section>
 
-        <section class="join">
-            <p>join</p>
+        <section class="join-block">
+            <h2 id="j-title">Join Our community</h2>
+            <a class="join-panel" href="join.html"><strong>Join Us</strong></a>
         </section>
     </main>
     <footer>
@@ -100,10 +96,12 @@
         <section class="footlogo">
             <picture><img src="images/logo.png" alt="CCV Logo">
             </picture>
-            <h3 class="">Centeral Commerce Visions</h3>
+            <h3>Centeral Commerce Visions</h3>
         </section>
-        <section class="contact">Contact Us: <br>
-            Email: CCV@business.org <br>
+        <section class="contact"><h3> Contact Us: <br></h3><p>
+           
+                Email: CCV@business.org <br>
+        </p>
             Phone: (360)-975-2695</section>
         <p class="lm">&copy; 2022 Central Commerce Vision | <b>Joseph Calvin</b> | WDD 230 Project | <b class="lastM"></b>
         </p>
@@ -111,6 +109,8 @@
     <script src="js/script.js"></script>
     <script src="js/date.js"></script>
     <script src="js/lastM.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
 </body>
 
 

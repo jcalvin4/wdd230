@@ -14,6 +14,7 @@
     }
     main{
         grid-template-columns: 1fr 3fr 1fr;
+        max-width: 1200px;
     
     }
     .large{
@@ -46,7 +47,10 @@
         grid-column: 1/4;
         grid-row: 1/2;
     }
-    .spot3{
+    #spot3{
         display: block;
+    }
+    #contact-cont{
+        grid-column: 2/3;
     }
 }

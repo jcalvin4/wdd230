@@ -1,11 +1,15 @@
 @media only screen and (min-width: 900px){
     main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr;
     }
     .spotlight{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-count: 2;
+    }
+
+    #spot3{
+        display: none;
     }
     
 }

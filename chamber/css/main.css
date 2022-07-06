@@ -1,3 +1,8 @@
+:root {
+    --title-fonts: "Bebas Neue", "Noto Sans", sans-serif;
+    --body-fonts:"Noto Sans", sans-serif;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +17,9 @@ body{
     max-width: 100%;
     justify-content: center;
 
+}
+h1, h2, h3{
+    font-family: var(--title-fonts);
 }
 header {
     padding: 5px 0;
@@ -66,7 +74,6 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-
 .navigation a:hover {
     color:white;
     background-color: black;
@@ -99,12 +106,69 @@ section{
     margin: 5px;
 }
 .large{
-    grid-row: 1/2;
     position: relative;
+    grid-row: 1/2;
     width: 100%;
-    height: auto;
+    height: fit-content;
+    padding: 5px;
     
 
+}
+#hero{
+    position: relative;
+    height: 194.86px;
+}
+.join{
+    background-color: #6f4848;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--title-fonts);
+    color: rgba(255, 255, 0, 0.656);
+    height: 3em;
+    width: 9em;
+    position: absolute;
+    top: 300px;
+    right: 30px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 1em;
+}
+
+.join:hover{
+    background-color: black;
+    color: white;
+}
+
+#j-title{
+    margin: 0 auto;
+}
+
+.join-block{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    height: 215px;
+    width: auto;
+}
+
+.join-panel{
+    background-color: #6f4848;
+    border-radius: 10px;
+    font-size: 18px;
+    position: absolute;
+    font-family: var(--body-fonts);
+    color: rgba(255, 255, 0, 0.656);
+    height: 3em;
+    width: 9em;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 1em;
+    top: 50px;
+    left: 18px;
 }
 .soc{
     text-align: end;
@@ -122,6 +186,12 @@ footer{
 .spotlight{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+}
+
+p{
+    font-family: var(--body-fonts);
 }
 .banner{
     max-width:100%;
@@ -141,6 +211,7 @@ footer{
     display: inline-block;
     text-align: center;
     padding: 1em;
+    border: none;
 }
 .last-visit{
     display: inline-block;
@@ -149,21 +220,27 @@ footer{
 }
 .contact{
     display: inline-block;
+    border: none;
 
 }
-.spot3{
+#spot3{
     display: none;
 }
-.H-text{
-    position: absolute;
-    color:rgb(255, 255, 255);
-}
 #hero2{
-    right: 300px;
+    position: relative;
+    left: 30px;
+    color: black;
 }
 #hero3{
+    position: absolute;
     right: 320px;
-    top: 75px;
+    top: -300px;
+}
+.gold{
+    padding: 10px;
+}
+.gold h1{
+    font-size: medium;
 }
 #city{
     max-width: 100%;
@@ -254,7 +331,7 @@ input:invalid {
 	margin: 0 auto;
 	border: 1px solid #bbb;
 	padding: 0.5rem;
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
 	background-color: #eee;
 	font-family: "Caveat", cursive;
@@ -268,7 +345,9 @@ input:invalid {
 .menu button {
 	padding: 1rem;
 }
-
+article{
+    margin:0 auto;
+}
 article,
 section {
 	margin: 0.75rem;
@@ -283,13 +362,16 @@ section {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
 	align-items: center;
 }
 
-.list {
-	display: flex;
-    
-	flex-direction: column;
+.list .logos{
+    display: none;
+}
+
+.list h1 h2 h3{
+    font-size: medium;
 }
 
 .list section {
@@ -307,7 +389,7 @@ section {
 }
 
 .list section {
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: left;
 }
 
@@ -323,10 +405,12 @@ section {
 article h3 {
 	font-size: 1.5rem;
 }
-
+.logos{
+    border-radius: 15px;
+}
 
 img {
-	height: 75px;
+	height: auto;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
 
@@ -357,9 +441,6 @@ header {
 }
 
 @media (min-width: 700px) {
-	.list section img {
-		display: block;
-	}
     #heading{
         grid-column: 1/4;
         text-align: center;
@@ -372,6 +453,17 @@ header {
         background-color: #bbb;
         text-align: center;
         
+    }
+
+    .list section{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #heading{
+        grid-column: 1/5;
+        text-align: center;
     }
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Join Page" content="Form to Join our Chamber">
+    <meta name="description" content="Form to Join our Chamber">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;600;700&display=swap"
     rel="stylesheet">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <title>Join Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 <body>
     <header>
@@ -31,10 +32,9 @@
         <div class="otherHead">
             <nav>
                 <ul class="navigation">
-                    <li><a href="#" class="ham">Menu</a></li>
+                    <li><a href="#" class="ham"></a></li>
                     <li><a href="discover_page.html">Discover</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="directory.html">Directory</a></li>
                 </ul>
@@ -47,6 +47,32 @@
         </div>
     </header>
     <main>
+
+        <div id="info">
+            
+            <section>
+                <h3> Non-Profit</h3>
+                <p>No Fees and Free Limited Advertising</p>
+            </section>
+            <section>
+                <h3>Bronze Members</h3>
+                <p><strong>$60</strong> yearly fee.
+                    Limited advertising in downtown areas.
+                </p>
+            </section>
+            <section>
+                <h3>Silver Members</h3>
+                <p><strong>$120</strong> yearly fee.
+                    Greater advertising in downtown areas.</p>
+            </section>
+            <section>
+                <h3>Gold Membership</h3>
+                <p><strong>$240</strong> yearly fee.
+                Billboard advertising around the city. Representation on the Home Page of our champer website.</p>
+            </section>
+        </div>
+
+
         <form method="get" action="thankyou.html">
             <label for="firstname" class="required">First Name:</label>
             <input type="text" name="firstname" id="firstname" autofocus required>
@@ -84,6 +110,7 @@
             <input type="hidden" id="subdate" name="subdate" value="0">
              <input type="submit" value="Sign Up">
         </form>
+
     </main>
     <footer>
 
