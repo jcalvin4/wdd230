@@ -1,0 +1,104 @@
+{
+    "temples": [
+        {
+            "name": "Portland Oregon Temple",
+            "address": "13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States",
+            "phone": "503-639-7066",
+            "services": "Clothing rental available, Distribution center nearby",
+            "closure": [
+                "Monday, 18 July 2022 - Monday, 15 August 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Sunday, 25 December 2022",
+                "Saturday, 31 December 2022",
+                "Monday, 23 January 2023 - Monday, 6 February 2023",
+                "Monday, 24 July 2023 - Monday, 7 August 2023"
+            ],
+            "history": [
+                "7 April 1984: Announced",
+                "20 September 1986: Groundbreaking",
+                "19 August 1989: Dedicated"]
+        },
+        {
+            "name": "Provo Utah Temple",
+            "address": "2200 Temple Hill Dr Provo UT 84604-1775 United States",
+            "phone": "801-375-5775",
+            "services": "Clothing rental available, Distribution center nearby",
+            "closure": [
+                "Monday, 4 July 2022 - Monday, 18 July 2022",
+                "Monday, 25 July 2022",
+                "Monday, 5 September 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 31 December 2022",
+                "Monday, 19 December 2022 - Monday, 2 January 2023",
+                "Saturday, 1 April 2023",
+                "Monday, 29 May 2023",
+                "Monday, 3 July 2023 - Monday, 17 July 2023",
+                "Monday, 24 July 2023",
+                "Monday, 4 September 2023",
+                "Saturday, 7 October 2023",
+                "Wednesday, 22 November 2023 (Limited Operations)",
+                "Thursday, 23 November 2023",
+                "Monday, 18 December 2023 - Monday, 1 January 2024"
+            ],
+            "history": [
+                "14 August 1967: Announced",
+                "15 September 1969: Groundbreaking",
+                "9 February 1972: Dedicated"]
+        },
+        {
+            "name": "Pocatello Idaho Temple",
+            "address": "3100 Butte St Pocatello ID 83201 United States",
+            "phone": "208-646-7730",
+            "services": "Clothing rental available",
+            "closure": [
+                "Saturday, 1 October 2022",
+                "Monday, 31 October 2022 - Monday, 14 November 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022 (Limited Operations)",
+                "Saturday, 1 April 2023",
+                "Monday, 19 December 2022 - Monday, 2 January 2023",
+                "Saturday, 1 April 2023",
+                "Monday, 15 May 2023 - Monday, 29 May 2023",
+                "Tuesday, 4 July 2023",
+                "Saturday, 7 October 2023",
+                "Monday, 30 October 2023 - Monday, 13 November 2023",
+                "Wednesday, 22 November 2023 (Limited Operations)",
+                "Thursday, 23 November 2023"
+            ],
+            "history": [
+                "2 April 2017: Announced",
+                "16 March 2019: Groundbreaking",
+                "7 November 2021: Dedicated"]
+        },
+        {
+            "name": "Spokane Washington Temple",
+            "address": "13710 E 40th Ave Spokane WA 99206 United States",
+            "phone": "509-926-2824",
+            "services": "Distribution center nearby",
+            "closure": [
+                "Monday, 21 March 2022 - Monday, 25 July 2022",
+                "Wednesday, 23 November 2022",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022",
+                "Monday, 3 April 2023 - Monday, 17 April 2023",
+                "Tuesday, 4 July 2023",
+                "Monday, 2 October 2023 - Monday, 16 October 2023",
+                "Wednesday, 22 November 2023",
+                "Thursday, 23 November 2023",
+                "Monday, 25 December 2023"
+            ],
+            "history": [
+                "13 August 1998: Announced",
+                "10 October 1998: Groundbreaking",
+                "21 August 1999: Dedicated"]
+        }
+    ]
+}
