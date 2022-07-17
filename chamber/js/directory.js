@@ -35,5 +35,5 @@ fetch('https://jcalvin4.github.io/wdd230/chamber/json/directory.json')
     section.appendChild(email);
     section.appendChild(website);
     section.appendChild(image);
-    resultElement.appendChild(section);})
+    resultElement.appendChild(section);}) 
 })

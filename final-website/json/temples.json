@@ -5,6 +5,7 @@
             "address": "13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States",
             "phone": "503-639-7066",
             "services": "Clothing rental available, Distribution center nearby",
+            "images": "https://jcalvin4.github.io/wdd230/final-website/images/portland_oregon_temple.jpg",
             "closure": [
                 "Monday, 18 July 2022 - Monday, 15 August 2022",
                 "Saturday, 1 October 2022",
@@ -26,6 +27,7 @@
             "address": "2200 Temple Hill Dr Provo UT 84604-1775 United States",
             "phone": "801-375-5775",
             "services": "Clothing rental available, Distribution center nearby",
+            "images": "https://jcalvin4.github.io/wdd230/final-website/images/provo_temple_lds.jpg",
             "closure": [
                 "Monday, 4 July 2022 - Monday, 18 July 2022",
                 "Monday, 25 July 2022",
@@ -55,6 +57,7 @@
             "address": "3100 Butte St Pocatello ID 83201 United States",
             "phone": "208-646-7730",
             "services": "Clothing rental available",
+            "images": "https://jcalvin4.github.io/wdd230/final-website/images/pocatello_idaho_temple.jpg",
             "closure": [
                 "Saturday, 1 October 2022",
                 "Monday, 31 October 2022 - Monday, 14 November 2022",
@@ -82,6 +85,7 @@
             "address": "13710 E 40th Ave Spokane WA 99206 United States",
             "phone": "509-926-2824",
             "services": "Distribution center nearby",
+            "images": "https://jcalvin4.github.io/wdd230/final-website/images/spokane_washington_temple_lds.jpg",
             "closure": [
                 "Monday, 21 March 2022 - Monday, 25 July 2022",
                 "Wednesday, 23 November 2022",

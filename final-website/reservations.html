@@ -16,19 +16,54 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="#" class="ham"></a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="temples.html">Temples</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        
+        <form method="get" action="thankyou.html">
+            <label for="firstname" class="required">First Name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required>
+            
+            <label for="lastname" class="required">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+            <label for="email" class="required">Email</label>
+            <input type="email" name="email" id="email" placeholder="myemail@business.com" required>
+             
+            <label for="title">Which Location will You Be Staying?</label>
+            <input type="text" name="title" id="title" pattern="\D{4+}" minlength="4">
+            
+            
+            
+            <label for="nob" class="required">Name of Business</label>
+            <input type="text" name="nob" id="nob" required>
+            
+            <label for="phone" class="required">Phone # | ex:(555-555-5555)</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="\d\d\d-\d\d\d-\d\d\d\d" required>
+
+            <div id="room-type">
+                <label><input type="radio" name="status" id="NP">
+                Standard Suite</label>
+                <label><input type="radio" name="status" id="bronze">
+                Standard Plus Suite</label>
+                <label><input type="radio" name="status" id="silver">
+                Executive Suite</label>
+                <label><input type="radio" name="status" id="gold">
+                Royal Suite</label>
+            </div>
+
+            <textarea name="Special Accomodations" id="Accomodations" cols="30" rows="10" placeholder="Special Accomodations"></textarea>
+            <input type="hidden" id="subdate" name="subdate" value="0">
+             <input type="submit" value="Reserve">
+            </form>
 
     </main>
     <footer>
 
     </footer>
+    <script src="/js/menu.js"></script>
 </body>

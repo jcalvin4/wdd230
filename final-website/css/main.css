@@ -3,6 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f7ebd7;
+    max-width: 100%;
+    justify-content: center;
+
+}
+header {
+    padding: 5px 0;
+    width: 100%;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #009ddc;
+}
 
 nav{
     margin: 0 auto;
@@ -27,7 +44,7 @@ nav{
     margin-left: 0;
     text-align: left;
     text-decoration: none;
-    background-color: #6f4848;
+    background-color: #2e294e   ;
     color: rgb(255, 255, 255);
     font-weight: 550;
     font-size: 25px;
