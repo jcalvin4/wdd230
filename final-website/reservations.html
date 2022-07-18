@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal WDD230</title>
+    <title>Reserve</title>
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/main.css">
@@ -23,8 +23,32 @@
                 </ul>
             </nav>
         </div>
+        <div class="headings">
+            <a href="index.html"><img src="images/logo.png" alt="CCV Logo" class="logo"></a>
+            <section class="heading">
+                <h1>Temple Inn and Suites</h1>
+            </section>
+            <div class="soc">
+                <a href="https://www.facebook.com/"><img src="images/flogo.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/"><img src="images/tlogo.png" alt="Twitter Logo"></a>
+            </div>
+        </div>
     </header>
-    <main>
+    <main id="form">
+        <div>
+            <h2>Room Info</h2>
+            <p><strong>
+                Standard Suite
+            </strong><br>
+            The standard suite comes with basic accommodations. A full size mattress with a television and unlimited wi-fi access. <br>
+            <strong>Standard Plus Suite</strong><br>
+        Our Standard Plus Room comes with everythinng the Standard Suite has with a limited access price-inclusive room service.
+    <strong>Executive Suite</strong><br>
+            The Executive Suite comes with a range of extra services such as access to our massage lounges and VIP access at our restaurants. <br>
+            <strong>Royal Suite</strong><br>
+            Prepare for the royal treatment. Purchasing the Royal Suite provides an all inclusive experience with no extra charges. This includes everyone of our extra services ranging from room service to our exclusive lounges.</p>
+            
+        </div>
         <form method="get" action="thankyou.html">
             <label for="firstname" class="required">First Name:</label>
             <input type="text" name="firstname" id="firstname" autofocus required>
@@ -37,10 +61,6 @@
             <label for="title">Which Location will You Be Staying?</label>
             <input type="text" name="title" id="title" pattern="\D{4+}" minlength="4">
             
-            
-            
-            <label for="nob" class="required">Name of Business</label>
-            <input type="text" name="nob" id="nob" required>
             
             <label for="phone" class="required">Phone # | ex:(555-555-5555)</label>
             <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="\d\d\d-\d\d\d-\d\d\d\d" required>
@@ -63,7 +83,18 @@
 
     </main>
     <footer>
-
+        <section class="footlogo">
+            <picture><img src="images/logo.jpg" alt="CCV Logo">
+            </picture>
+            <h3>Temple Inn and Suites</h3>
+        </section>
+        <section class="contact"><h3> Contact Us: <br></h3><p>
+           
+                Email: TTS@business.org <br>
+        </p>
+            Phone: (360)-975-2695</section>
+        <p class="lm">&copy; 2022 Temple Inn and Suites | <b>Joseph Calvin</b> | WDD 230 Project | <b class="lastM"></b>
+        </p>
     </footer>
     <script src="/js/menu.js"></script>
 </body>

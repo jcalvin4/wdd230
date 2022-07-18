@@ -63,3 +63,55 @@ nav{
 .responsive a.ham::before {
     content: "❌ ";
 }
+.headings{
+    display:flex;
+
+}
+.logo{
+    margin: auto;
+    width: 100%;
+    height:auto;
+    margin-top: 2em;
+    border-radius: 8px;
+    
+}
+
+footer{
+    border: 2px solid black;
+    justify-content: space-between;
+}
+div {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 2.5em;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 5px 0;
+}
+section{
+    margin: 5px;
+}
+
+#join{
+    position: relative;
+    width: 100%
+}
+.join-panel{
+    background-color: #6f4848;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 18px;
+    font-family: var(--body-fonts);
+    color: rgba(255, 255, 0, 0.656);
+    height: 3em;
+    width: 9em;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 1em;
+    float: right;
+
+}
