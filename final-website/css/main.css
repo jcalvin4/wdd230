@@ -21,7 +21,7 @@ header {
     background-color: #009ddc;
 }
 
-.heading{
+.heading, .headings, .soc, .nav, #room-type{
     border: none;
 }
 
@@ -81,15 +81,17 @@ nav{
 }
 
 h1, h2, h3{
-
+    font-family: 'Rubik Mono One', sans-serif;
 }
-
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
 footer{
     border: 2px solid black;
     justify-content: space-between;
     background-color: #009ddc;
 }
-section {
+section, div{
     border-radius: 10px;
     border: 2px solid black;
     padding: 2.5em;
