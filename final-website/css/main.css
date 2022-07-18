@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: #f7ebd7;
+    background-color: white;
     max-width: 100%;
     justify-content: center;
 
@@ -19,6 +19,10 @@ header {
     align-content: center;
     justify-content: center;
     background-color: #009ddc;
+}
+
+.heading{
+    border: none;
 }
 
 nav{
@@ -76,11 +80,16 @@ nav{
     
 }
 
+h1, h2, h3{
+
+}
+
 footer{
     border: 2px solid black;
     justify-content: space-between;
+    background-color: #009ddc;
 }
-div {
+section {
     border-radius: 10px;
     border: 2px solid black;
     padding: 2.5em;
@@ -114,4 +123,19 @@ section{
     padding: 1em;
     float: right;
 
+}
+
+/*Reservation Page*/
+.card {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: rgb(248, 216, 236);
+}
+
+.schedule{
+    list-style: none;
+}
+
+.history{
+    list-style: none;
 }
